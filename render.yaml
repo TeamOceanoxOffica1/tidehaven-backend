@@ -2,5 +2,5 @@ services:
   - type: web
     name: tidehaven-backend
     env: java
-    buildCommand: mvn -B clean package
+    buildCommand: mvn clean install
     startCommand: java -jar target/*.jar
